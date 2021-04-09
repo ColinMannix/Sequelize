@@ -1,5 +1,5 @@
 async function populateDiningHalls() {
-    console.log("populate function found");
+    //console.log("populate function found");
     const request = await fetch('api/dining');
     const diningData = await request.json();
     targetBox = document.getElementById('table');
@@ -15,7 +15,7 @@ async function populateDiningHalls() {
 }
 
 async function getData() {
-    console.log("getting data");
+    //console.log("getting data");
     const hallRequest = await fetch('/api/dining');
     const hallData = await hallRequest.json();
     return hallData.data;
